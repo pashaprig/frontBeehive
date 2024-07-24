@@ -1,4 +1,5 @@
 import Logo from '../logo/logo';
+import SignUp from '../sign-up';
 
 type HeaderProps = {
   favoritesCount: number;
@@ -7,6 +8,7 @@ type HeaderProps = {
 function Header({favoritesCount}:HeaderProps): JSX.Element {
   return (
     <header className="header">
+      <SignUp />
       <div className="container">
         <div className="header__wrapper">
           <div className="header__left">
